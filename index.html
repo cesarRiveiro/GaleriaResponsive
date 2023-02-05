@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Galeria Responsive</title>
+</head>
+<body>
+    <section>
+        <div class="grid-container">
+            <div id="item1">
+                <img
+                 src="./img/eiffeltower-1920x1279-72ppp.jpg"
+                 srcset="./img/eiffeltower-1920x1279-300ppp.jpg 960w"
+                 sizes="80vw"
+                 alt="imagen que ocupa el 80%">
+            </div>
+            <div id="item2">
+                <img
+                srcset="./img/eiffeltower-200x133-300ppp.jpg,
+                        ./img/eiffeltower-400x266-300ppp.jpg 2x"
+                         src="./img/eiffeltower-200x133-72ppp.jpg" alt="mostrar imagen dependiendo del dpi del dispositivo">
+            </div>
+            <div id="item3"><img src="./img/eiffeltower-400x266-300ppp.jpg" alt=""></div>
+            <div id="item4"><img src="./img/eiffeltower-1920x1279-300ppp.jpg" alt=""></div>
+            <div id="item5"><img src="./img/eiffeltower-400x266-300ppp.jpg" alt=""></div>
+            <div id="item6"><img src="./img/eiffeltower-400x266-300ppp.jpg" alt=""></div>
+            <div id="item7">
+                <picture>
+                    <source
+                        srcset="./img/eiffeltower-400x266-72ppp.jpg,
+                            ./img/eiffeltower-400x266-300ppp.jpg 2x"
+                        media="(max-width: 400px)"
+                    />
+                    <source
+                        srcset="./img/eiffeltower-800x553-72ppp.jpg,
+                                ./img/eiffeltower-800x533-300ppp.jpg 2x"
+                        media="(max-width: 800px)"
+                    />
+                    <source
+                    srcset="./img/eiffeltower-1920x1279-72ppp.jpg,
+                            ./img/eiffeltower-1920x1279-300ppp.jpg 2x"
+                    media="(max-width: 1920px)"
+                    />
+                    <img
+                    srcset="./img/eiffeltower-200x133-300ppp.jpg"
+                    alt="La torre eiffel de Paris"
+                    />  
+                </picture>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
